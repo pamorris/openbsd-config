@@ -1,0 +1,91 @@
+set imap_user="paul@pmorris.org"
+set imap_pass="APP_SPECIFIC_PASSWORD"
+
+set folder="imaps://imap.gmail.com"
+set spoolfile="+INBOX"
+set trash="+[Gmail]/Trash"
+
+set header_cache="~/.neomutt/cache"
+set message_cachedir="~/.neomutt/cache"
+
+unset imap_passive
+set imap_keepalive=300
+set mail_check=120
+
+unset record
+set copy=no
+
+set smtp_url="smtp://$imap_user:$imap_pass@smtp.gmail.com:587"
+set realname="Paul Morris"
+set from="paul@pmorris.org"
+set use_from=yes
+set ssl_force_tls=yes
+
+bind editor <space> noop
+bind index g noop
+macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index gs "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
+macro index gt "<change-folder>=[Gmail]/Trash<enter>" "Go to trash"
+#macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash"
+macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
+bind pager j next-line
+bind pager k previous-line
+bind pager l view-attachments
+bind attach i exit
+
+set sort="reverse-date"
+set markers=no
+set mark_old=no
+set mime_forward=yes
+set forward_format="Fwd: %s"
+set forward_quote
+set include
+
+auto_view text/html
+alternative_order text/plain text/html
+
+#Headers displayed
+ignore *
+unignore from date subject to cc
+hdr_order From To Cc Date Subject
+
+color index yellow default '.*'
+color index_author red default '.*'
+color index_number blue default
+color index_subject cyan default '.*'
+
+color index brightyellow black "~N"
+color index_author brightred black "~N"
+color index_subject brightcyan black "~N"
+
+mono bold bold
+mono underline underline
+mono indicator reverse
+mono error bold
+color normal default default
+color indicator brightblack white
+color sidebar_highlight red default
+color sidebar_divider brightblack black
+color sidebar_flagged red black
+color sidebar_new green black
+color normal brightyellow default
+color error red default
+color tilde black default
+color message cyan default
+color markers red white
+color attachment white default
+color search brightmagenta default
+color status brightyellow black
+color hdrdefault brightgreen default
+color quoted green default
+color quoted1 blue default
+color quoted2 cyan default
+color quoted3 yellow default
+color quoted4 red default
+color quoted5 brightred default
+color signature brightgreen default
+color bold black default
+color underline black default
+color normal default default
