@@ -1,4 +1,5 @@
 export EDITOR=/usr/local/bin/nvim
+#export VISUAL=emacs
 export FCEDIT=$EDITOR
 export PAGER=less
 export LESS='-iMRS -x2'
@@ -7,8 +8,6 @@ export LC_CTYPE=en_US.UTF-8
 export CLICOLOR=1
 HISTFILE=$HOME/.ksh_history
 HISTSIZE=20000
-
-set -o vi
 
 LS='ls'
 alias ls="$LS -FHh"
