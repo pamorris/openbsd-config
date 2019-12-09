@@ -2,7 +2,8 @@ export ENV=$HOME/.kshrc
 export LANG=en_US.UTF-8
 xset b off
 setxkbmap -option ctrl:nocaps
-xsetroot -solid grey 
+xsetroot -solid grey
+feh --no-fehbg --bg-fill $HOME/themes/puffy-matrix-1920x1080.jpg
 xbacklight -set 85
 xrdb -merge $HOME/.Xresources
 xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation" 1

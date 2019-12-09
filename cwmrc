@@ -5,7 +5,7 @@ sticky yes
 snapdist 8
 
 # leave a gap for xclock
-#gap 0 14 0 0
+gap 20 50 20 20
 
 # set font for menus
 fontname "fixed:pixelsize=13:style=semicondensed"

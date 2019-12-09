@@ -6,27 +6,44 @@ XTerm*faceSize: 14
 XTerm*termName: xterm-256color
 XTerm*vt100.scrollBar: false
 
-! zenburn theme - http://kippura.org/zenburnpage
-XTerm*background     : #3f3f3f
-XTerm*foreground     : #dcdccc
-XTerm*cursorColor    : #aaaaaa
-XTerm*colorUL        : #366060
-XTerm*underlineColor : #dfaf8f
-XTerm*color0         : #3f3f3f
-XTerm*color1         : #cc9393
-XTerm*color2         : #7f9f7f
-XTerm*color3         : #d0bf8f
-XTerm*color4         : #6ca0a3
-XTerm*color5         : #dc8cc3
-XTerm*color6         : #93e0e3
-XTerm*color7         : #dcdccc
-XTerm*color8         : #000000
-XTerm*color9         : #dca3a3
-XTerm*color10        : #bfebbf
-XTerm*color11        : #f0dfaf
-XTerm*color12        : #8cd0d3
-XTerm*color13        : #dc8cc3
-XTerm*color14        : #93e0e3
-XTerm*color15        : #ffffff
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
+
+*.foreground:   nord4
+*.background:   nord0
+*.cursorColor:  nord4
+*fading: 35
+*fadeColor: nord3
+
+*.color0: nord1
+*.color1: nord11
+*.color2: nord14
+*.color3: nord13
+*.color4: nord9
+*.color5: nord15
+*.color6: nord8
+*.color7: nord5
+*.color8: nord3
+*.color9: nord11
+*.color10: nord14
+*.color11: nord13
+*.color12: nord9
+*.color13: nord15
+*.color14: nord7
+*.color15: nord6
 
 !XIdle*timeout:	300
