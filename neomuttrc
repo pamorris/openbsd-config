@@ -1,35 +1,6 @@
-set imap_user="paul@pmorris.org"
-set imap_pass="APP_SPECIFIC_PASSWORD"
-
-set folder="imaps://imap.gmail.com"
-set spoolfile="+INBOX"
-set trash="+[Gmail]/Trash"
-
-set header_cache="~/.neomutt/cache"
-set message_cachedir="~/.neomutt/cache"
-
-unset imap_passive
-set imap_keepalive=300
-set mail_check=120
-
-unset record
-set copy=no
-
-set smtp_url="smtp://$imap_user:$imap_pass@smtp.gmail.com:587"
-set realname="Paul Morris"
-set from="paul@pmorris.org"
-set use_from=yes
-set ssl_force_tls=yes
+set folder=~/.neomutt
 
 bind editor <space> noop
-bind index g noop
-macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
-macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
-macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
-macro index gs "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
-macro index gt "<change-folder>=[Gmail]/Trash<enter>" "Go to trash"
-#macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash"
-macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
 bind pager j next-line
 bind pager k previous-line
 bind pager l view-attachments
