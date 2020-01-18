@@ -1,2 +1,2 @@
 #!/bin/sh
-sysctl machdep.lidaction=0
+doas sysctl machdep.lidaction=0
