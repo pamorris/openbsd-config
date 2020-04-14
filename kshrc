@@ -1,5 +1,5 @@
 export EDITOR=/usr/local/bin/nvim
-#export VISUAL=emacs
+export VISUAL=emacs
 export FCEDIT=$EDITOR
 export PAGER=less
 export LESS='-iMRS -x2'
