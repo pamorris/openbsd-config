@@ -1,5 +1,5 @@
-!Xft.dpi: 144
-Xft.dpi: 96
+Xft.dpi: 144
+!Xft.dpi: 96
 
 XTerm*faceName:	Monospace
 XTerm*faceSize: 14
