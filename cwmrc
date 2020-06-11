@@ -139,6 +139,7 @@ bind-mouse 4-3 window-resize
 # these commands will appear in the command menu
 command xterm  xterm
 command chrome chrome
+command firefox firefox
 command xlock "xlock -mode dclock"
 
 # ignore these windows when tiling/cycling
