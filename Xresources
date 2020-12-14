@@ -1,7 +1,8 @@
+Xft.dpi: 192
 !Xft.dpi: 144
-Xft.dpi: 96
+!Xft.dpi: 96
 
-XTerm*faceName:	Monospace
+XTerm*faceName: Monospace
 XTerm*faceSize: 14
 XTerm*termName: xterm-256color
 XTerm*vt100.scrollBar: false
@@ -45,5 +46,3 @@ XTerm*vt100.scrollBar: false
 *.color13: nord15
 *.color14: nord7
 *.color15: nord6
-
-!XIdle*timeout:	300
