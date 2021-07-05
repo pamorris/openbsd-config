@@ -1,0 +1,2 @@
+family inet6 inet4
+lookup file bind

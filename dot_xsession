@@ -1,0 +1,17 @@
+export ENV=$HOME/.kshrc
+export LANG=en_US.UTF-8
+xset b off
+#xset s off
+#xset dpms 0 0 0
+#xset -dpms
+xset m 3 4
+setxkbmap -option caps:escape
+xsetroot -solid black 
+xrdb -merge $HOME/.Xresources
+sndioctl output.level=0.5
+#xrandr --output DisplayPort-0 --mode 2560x1440 --output DisplayPort-1 --mode 2560x1440 --right-of DisplayPort-0
+#xrandr --output DisplayPort-0 --mode 3840x2160 --output DisplayPort-1 --mode 3840x2160 --right-of DisplayPort-0
+xidle -delay 3 -sw -program "/usr/X11R6/bin/xlock -mode dclock" -timeout 600 &
+#/usr/local/bin/slstatus &
+xsetroot -name " $(uname -rs) "
+exec /usr/local/bin/dwm
